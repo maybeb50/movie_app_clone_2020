@@ -11,11 +11,6 @@ class App extends React.Component {
   };
   
   increase = () => {
-    // this.state.count = 1;
-    
-    // this.setState({
-    //   count: this.state.count + 1
-    // });
     this.setState(current => ({
         count: current.count + 1
     })); 
@@ -23,17 +18,25 @@ class App extends React.Component {
   } 
 
   decrease = () => {
-    //this.state.count = -1;
-    // this.setState({
-    //   count: this.state.count - 1
-    // }); 
     this.setState(current => ({
       count: current.count - 1
-  })); 
+    })); 
   } 
 
+  componentDidMount() {
+    console.log('component rendered');
+  }
+
+  componentDidUpdate() {
+    console.log('component update');
+  }
+
+  componentWillUnmount() {
+    console.log('component unmount');
+  }
+
   render() {
-    // console.log(this);  // App {}
+    console.log('I am rendering'); 
     return(
       <div>
         <h1>{this.state.count}</h1>
@@ -45,4 +48,3 @@ class App extends React.Component {
 }
 
 export default App;
-
