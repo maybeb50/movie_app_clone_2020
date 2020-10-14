@@ -9,6 +9,7 @@ class Counter extends Component {
   onDecrease = () => {
     this.setState(({value}) => ({ value: value - 1 }))
   }
+  
   render() {
     return (
       <div>
