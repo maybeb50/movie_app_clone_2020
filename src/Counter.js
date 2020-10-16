@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
+
 class Counter extends Component {
   state = {
     value: 1
   }
+
   onIncrease = () => {
     this.setState(({value}) => ({ value: value + 1 }))
   }
+
   onDecrease = () => {
     this.setState(({value}) => ({ value: value - 1 }))
   }
