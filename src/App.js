@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import ErrorBoundary from './ErrorBoundary';
-import BuggyCounter from './BuggyCounter';
+
+function createMarkup() {
+  return {__html: 'Create Markup !!!!!!'}
+}
 
 class App extends Component {
   render() {
     return(
-      <ErrorBoundary>
-        <BuggyCounter />
-      </ErrorBoundary>
+      <div dangerouslySetInnerHTML={createMarkup()} />
     )
   }
 }
