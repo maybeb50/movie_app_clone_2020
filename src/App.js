@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
-
-function createMarkup() {
-  return {__html: 'Create Markup !!!!!!'}
-}
+import './App.css';
+import { HashRouter, Route } from 'react-router-dom';
+import About from './routes/About';
+import Home from './routes/Home';
+import Navigation from './components/Navigation';
 
 class App extends Component {
   render() {
     return(
-      <div dangerouslySetInnerHTML={createMarkup()} />
-    )
+      <HashRouter>
+        <Navigation />
+        <Route path="/" exact={true} component={Home} />
+        <Route path="/About" component={About} />
+      </HashRouter>
+    );
   }
 }
 
