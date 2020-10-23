@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import MoizeTest from './MoizeTest';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MoizeTest />
   </React.StrictMode>,
   document.getElementById('root')
 );
