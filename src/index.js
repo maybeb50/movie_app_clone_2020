@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MoizeTest from './MoizeTest';
+import RefCustomTexIInput from './RefCustomTexIInput';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <MoizeTest />
+    <RefCustomTexIInput />
   </React.StrictMode>,
   document.getElementById('root')
 );
