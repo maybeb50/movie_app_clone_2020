@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RefCustomTexIInput from './RefCustomTexIInput';
+import InlineStyleTest from './InlineStyleTest';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <RefCustomTexIInput />
+    <InlineStyleTest />
   </React.StrictMode>,
   document.getElementById('root')
 );
