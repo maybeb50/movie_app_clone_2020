@@ -8,6 +8,7 @@ import Detail from './routes/Detail';
 
 class App extends Component {
   render() {
+    console.log('실행');
     return(
       <HashRouter>
         <Navigation />

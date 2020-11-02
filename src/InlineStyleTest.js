@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const box = {
-	color: 'gree',
+	color: 'green',
 	fontSize: '23px'
 };
 
@@ -11,9 +11,17 @@ const shadow = {
 };
 
 function InlineStyleTest() {
+	const [number, setTest] = useState(() => {
+		return console.log('실행')
+	});
+
+	const onClickEvent = () => {
+		setTest(number + 1);
+	}
+	
 	return(
-		<div style={Object.assign({}, box, shadow)}>
-			<h1>App.js</h1>
+		<div style={{...box, ...shadow}}>
+			<h1 onClick={onClickEvent}>App.js</h1>
 		</div>
 	);
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import InlineStyleTest from './InlineStyleTest';
+import LabelForm from './LabelForm';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <InlineStyleTest />
+    <LabelForm />
   </React.StrictMode>,
   document.getElementById('root')
 );
