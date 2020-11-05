@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LabelForm from './LabelForm';
+import MouseTracker from './MouseTracker';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <LabelForm />
+    <MouseTracker />
   </React.StrictMode>,
   document.getElementById('root')
 );
